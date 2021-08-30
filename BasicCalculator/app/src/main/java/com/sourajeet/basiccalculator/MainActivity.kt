@@ -93,7 +93,7 @@ class MainActivity : AppCompatActivity() {
         var btn = view as Button
         var text_answer = findViewById<TextView>(R.id.text_answer)
         var text_question = findViewById<TextView>(R.id.text_question)
-        var question : String = text_answer.text.toString()
+        var question : String = text_question.text.toString()+text_answer.text.toString()
 
         when(btn.id){
             button_add.id -> isAdd = true
@@ -104,18 +104,22 @@ class MainActivity : AppCompatActivity() {
         if(isAdd){
             text_question.setText(question+"+")
             text_answer.setText("")
+            isAdd = false
         }
         else if(isSubtract){
             text_question.setText(question+"-")
             text_answer.setText("")
+            isSubtract = false
         }
         else if(isMultiply){
             text_question.setText(question+"*")
             text_answer.setText("")
+            isMultiply = false
         }
         else if(isDivide){
             text_question.setText(question+"/")
             text_answer.setText("")
+            isDivide = false
         }
     }
 
