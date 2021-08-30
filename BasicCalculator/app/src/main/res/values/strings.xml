@@ -20,4 +20,5 @@
     <string name="button_0">0</string>
     <string name="button_point">.</string>
     <string name="button_equal">=</string>
+    <string name="initial"></string>
 </resources>
