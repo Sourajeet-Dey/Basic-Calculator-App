@@ -56,27 +56,30 @@
 
                 <Button
                     android:id="@+id/button_clear"
+                    style="?android:attr/buttonBarButtonStyle"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:text="@string/button_clear"
-                    style="?android:attr/buttonBarButtonStyle" />
+                    android:onClick="clearAll"
+                    android:text="@string/button_clear" />
 
                 <Button
                     android:id="@+id/button_back"
+                    style="?android:attr/buttonBarButtonStyle"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:text="@string/button_back"
-                    style="?android:attr/buttonBarButtonStyle" />
+                    android:onClick="back"
+                    android:text="@string/button_back" />
 
                 <Button
-                    android:id="@+id/button_modulo"
+                    android:id="@+id/button_percentage"
+                    style="?android:attr/buttonBarButtonStyle"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:text="@string/button_modulo"
-                    style="?android:attr/buttonBarButtonStyle" />
+                    android:onClick="operations"
+                    android:text="@string/button_modulo" />
 
                 <Button
                     android:id="@+id/button_divide"
@@ -218,13 +221,6 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1">
 
-                <Button
-                    android:id="@+id/button_intdivide"
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:text="@string/button_intdivide"
-                    style="?android:attr/buttonBarButtonStyle" />
 
                 <Button
                     android:id="@+id/button_0"
@@ -233,24 +229,29 @@
                     android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:onClick="appendText"
+
                     android:text="@string/button_0" />
 
                 <Button
                     android:id="@+id/button_point"
+                    style="?android:attr/buttonBarButtonStyle"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
-                    android:layout_weight="1"
 
-                    android:text="@string/button_point"
-                    style="?android:attr/buttonBarButtonStyle" />
+                    android:layout_weight="1"
+                    android:onClick="appendText"
+
+                    android:text="@string/button_point" />
 
                 <Button
                     android:id="@+id/button_equal"
+                    style="?android:attr/buttonBarButtonStyle"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:text="@string/button_equal"
-                    style="?android:attr/buttonBarButtonStyle" />
+                    android:layout_weight="7"
+                    android:onClick="equalTo"
+
+                    android:text="@string/button_equal" />
             </TableRow>
 
 
