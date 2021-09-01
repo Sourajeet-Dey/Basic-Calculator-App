@@ -141,13 +141,14 @@ class MainActivity : AppCompatActivity() {
             isDivide -> {
                 text_question.setText(question+"/")
                 text_answer.setText("")
-                input1 *= 0.01
+
                 doDivide = true
                 isDivide = false
             }
             isPercentage -> {
                 text_question.setText(question+"%")
                 text_answer.setText("")
+                input1 *= 0.01
                 doDivide = true
                 isDivide = false
             }
@@ -207,6 +208,12 @@ class MainActivity : AppCompatActivity() {
 
     fun back(view: View){
         var text_answer = findViewById<TextView>(R.id.text_answer)
+        var text_question = findViewById<TextView>(R.id.text_question)
+        if(isEqual){
+            text_answer.setText("")
+            text_question.setText("")
+            isEqual = false
+        }
         var str1 : String = text_answer.text.toString()
         if(str1.isNotEmpty()) text_answer.setText(str1.subSequence(0,str1.length-1))
     }

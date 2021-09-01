@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">Basic Calculator</string>
     <string name="button_clear">C</string>
-    <string name="button_back"><![CDATA[<---]]></string>
+    <string name="button_back">⌫</string>
     <string name="button_modulo">%</string>
     <string name="button_divide">/</string>
     <string name="button_7">7</string>
